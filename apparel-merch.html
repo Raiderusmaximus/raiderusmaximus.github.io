@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Rack Family Billiards — Apparel Design | Villitech Dezines &amp; Graphix</title>
+<meta name="description" content="Shark-mascot shirt art for The Rack Family Billiards, a Fresno billiards hall — front pocket and full back design, by Villitech Dezines &amp; Graphix.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#0a0e14;
+--bg-alt:#0d141d;
+--panel:#101822;
+--ink:#e9e4d8;
+--ink-dim:#a8a195;
+--brass:#c9a86a;
+--brass-bright:#e3c989;
+--brass-dim:#5b4a2e;
+--teal:#6fd8e3;
+--line: rgba(201,168,106,0.28);
+--radius: 2px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+margin:0;
+background:var(--bg);
+color:var(--ink);
+font-family:'Jost', sans-serif;
+font-weight:300;
+line-height:1.7;
+-webkit-font-smoothing:antialiased;
+}
+h1{
+font-family:'Cinzel', serif;
+margin:0;
+letter-spacing:0.04em;
+color:var(--brass-bright);
+}
+a{color:var(--teal);text-decoration:none;}
+a:focus-visible, button:focus-visible{outline:2px solid var(--teal); outline-offset:3px;}
+.container{max-width:1000px;margin:0 auto;padding:0 28px;}
+
+.site-nav{
+position:sticky;top:0;z-index:50;
+background:rgba(10,14,20,0.88);
+backdrop-filter: blur(6px);
+border-bottom:1px solid var(--line);
+}
+.site-nav .container{
+display:flex;align-items:center;justify-content:space-between;
+height:64px;
+}
+.brand{
+font-family:'Cinzel', serif;
+font-size:0.95rem;
+letter-spacing:0.18em;
+color:var(--brass-bright);
+display:flex;align-items:center;gap:10px;
+}
+.gear-btn{
+background:none;border:none;padding:0;margin:0;cursor:pointer;
+width:22px;height:22px;color:var(--brass);line-height:0;
+}
+.gear-btn svg{width:100%;height:100%;display:block;
+animation:gearSpin 9s linear infinite;
+transform-origin:50% 50%;
+}
+.gear-btn.burst svg{animation:gearSpin 0.6s linear 2;}
+.gear-btn:hover svg{color:var(--teal);}
+@keyframes gearSpin{ to{ transform:rotate(360deg); } }
+@media (prefers-reduced-motion: reduce){
+.gear-btn svg{animation:none;}
+}
+.back-link{
+display:inline-flex;align-items:center;gap:8px;
+font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;
+color:var(--ink-dim);transition:color .25s ease;
+}
+.back-link:hover{color:var(--teal);}
+.back-link svg{width:15px;height:15px;}
+
+.project-hero{padding:70px 0 16px;text-align:center;}
+.eyebrow{
+display:block;font-size:0.72rem;letter-spacing:0.3em;text-transform:uppercase;
+color:var(--teal);margin-bottom:14px;
+}
+.project-hero h1{font-size:clamp(1.8rem, 4vw, 2.6rem);margin-bottom:18px;}
+.project-hero p{color:var(--ink-dim);font-size:0.98rem;max-width:600px;margin:0 auto;}
+
+.gallery{padding:50px 0 30px;display:grid;gap:34px;}
+@media (min-width:760px){
+.gallery{grid-template-columns:1fr 1fr;align-items:start;}
+}
+.art-card{position:relative;background:var(--panel);border:1px solid var(--line);padding:16px;}
+.art-card::before,.art-card::after{content:"";position:absolute;width:18px;height:18px;}
+.art-card::before{top:-1px;left:-1px;border-top:1px solid var(--brass);border-left:1px solid var(--brass);}
+.art-card::after{bottom:-1px;right:-1px;border-bottom:1px solid var(--brass);border-right:1px solid var(--brass);}
+.art-card img{display:block;width:100%;height:auto;background:#000;}
+.art-card .cap{
+text-align:center;padding-top:16px;
+font-size:0.82rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--ink-dim);
+}
+
+.cta-row{text-align:center;padding:30px 0 90px;}
+.btn{
+display:inline-block;
+font-family:'Jost', sans-serif;
+font-size:0.78rem;
+letter-spacing:0.16em;
+text-transform:uppercase;
+color:var(--bg);
+background:linear-gradient(180deg, var(--brass-bright), var(--brass));
+padding:14px 30px;
+border-radius:var(--radius);
+transition:transform .25s ease, box-shadow .25s ease;
+}
+.btn:hover{transform:translateY(-2px); box-shadow:0 8px 24px rgba(111,216,227,0.18);}
+
+footer{
+border-top:1px solid var(--line);
+padding:34px 0;text-align:center;
+}
+footer p{margin:0;color:var(--ink-dim);font-size:0.78rem;letter-spacing:0.04em;}
+footer .tag{color:var(--brass-dim);font-size:0.72rem;margin-top:6px;letter-spacing:0.12em;text-transform:uppercase;}
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+<div class="container">
+<span class="brand">
+<button class="gear-btn" id="gearBtn" type="button" aria-label="Spin the gears">
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 8.4a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2zm9.3 2.55-1.84-.31a7.8 7.8 0 0 0-.5-1.2l1.1-1.5a.85.85 0 0 0-.09-1.1l-1.4-1.4a.85.85 0 0 0-1.1-.09l-1.5 1.1a7.8 7.8 0 0 0-1.2-.5l-.31-1.84A.85.85 0 0 0 13.6 3h-2a.85.85 0 0 0-.84.71l-.31 1.84a7.8 7.8 0 0 0-1.2.5l-1.5-1.1a.85.85 0 0 0-1.1.09l-1.4 1.4a.85.85 0 0 0-.09 1.1l1.1 1.5a7.8 7.8 0 0 0-.5 1.2l-1.84.31A.85.85 0 0 0 3 12.4v2a.85.85 0 0 0 .71.84l1.84.31c.13.42.3.82.5 1.2l-1.1 1.5a.85.85 0 0 0 .09 1.1l1.4 1.4a.85.85 0 0 0 1.1.09l1.5-1.1c.38.2.78.37 1.2.5l.31 1.84a.85.85 0 0 0 .84.71h2a.85.85 0 0 0 .84-.71l.31-1.84c.42-.13.82-.3 1.2-.5l1.5 1.1a.85.85 0 0 0 1.1-.09l1.4-1.4a.85.85 0 0 0 .09-1.1l-1.1-1.5c.2-.38.37-.78.5-1.2l1.84-.31a.85.85 0 0 0 .71-.84v-2a.85.85 0 0 0-.71-.84z"/></svg>
+</button>
+VILLITECH
+</span>
+<a class="back-link" href="index.html#portfolio">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg>
+Back to Portfolio
+</a>
+</div>
+</nav>
+
+<header class="project-hero">
+<div class="container">
+<span class="eyebrow">Apparel &amp; Merch Design</span>
+<h1>The Rack Family Billiards</h1>
+<p>Shark-mascot shirt art for a Fresno billiards hall: a front pocket mark and a full back design, both built for clean print separations.</p>
+</div>
+</header>
+
+<section class="gallery container">
+<div class="art-card">
+<img src="front%20left%20pocket.png" alt="Front pocket design: a grinning great white shark named Great White Jack holding a cue stick and 8-ball, with banner text The Rack, Great White Jack, Family Billiards, Fresno CA">
+<div class="cap">Front Pocket — "Great White" Jack</div>
+</div>
+<div class="art-card">
+<img src="back%20final.png" alt="Full back shirt design: two shark mascots, Willie Cue Shark Mosconi and Bull Shark Fats, playing pool with beer mugs on the table, under the headline Where Pool Sharks Become Legends and The Rack Family Billiards Fresno CA, with phone number and address">
+<div class="cap">Full Back — "Where Pool Sharks Become Legends"</div>
+</div>
+</section>
+
+<div class="cta-row container">
+<a class="btn" href="index.html#contact">Start Your Own Project</a>
+</div>
+
+<footer>
+<p>&copy; 2026 Villitech Dezines &amp; Graphix. All rights reserved.</p>
+<p class="tag">Vintage Craftsmanship. Future Vision. Exceptional Design.</p>
+</footer>
+
+<script>
+var gearBtn = document.getElementById('gearBtn');
+gearBtn.addEventListener('click', function(){
+gearBtn.classList.remove('burst');
+void gearBtn.offsetWidth;
+gearBtn.classList.add('burst');
+});
+gearBtn.querySelector('svg').addEventListener('animationend', function(){
+gearBtn.classList.remove('burst');
+});
+</script>
+
+</body>
+</html>
