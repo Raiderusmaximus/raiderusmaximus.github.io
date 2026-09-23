@@ -120,6 +120,15 @@ transition:transform .25s ease, box-shadow .25s ease;
 }
 .btn:hover{transform:translateY(-2px); box-shadow:0 8px 24px rgba(111,216,227,0.18);}
 
+h2{font-family:'Cinzel',serif;color:var(--brass-bright);letter-spacing:0.04em;margin:0;}
+.showcase{padding:0 0 10px;}
+.showcase-header{text-align:center;border-top:1px solid var(--line);padding:44px 0 34px;}
+.showcase-header h2{font-size:clamp(1.3rem,3vw,1.9rem);margin-bottom:14px;}
+.showcase-header p{color:var(--ink-dim);font-size:0.98rem;max-width:560px;margin:0 auto;}
+.showcase-primary{margin-bottom:34px;}
+.showcase-apps{display:grid;gap:34px;}
+@media(min-width:760px){.showcase-apps{grid-template-columns:1fr 1fr;}}
+
 footer{
 border-top:1px solid var(--line);
 padding:34px 0;text-align:center;
@@ -186,6 +195,30 @@ Back to Services
 <div class="art-card">
 <img src="images/NFI.png" alt="Nanofly Industries CyberFly nano-drone infographic — full brand identity, logo lockup, and product spec sheet design">
 <div class="cap">Nanofly Industries — Sci-Fi Brand &amp; Product Identity</div>
+</div>
+</section>
+
+<section class="showcase container">
+<div class="showcase-header">
+<span class="eyebrow">Client Project</span>
+<h2>Medusa — Primary Logo</h2>
+<p>A bold mythological identity built for versatility across tech branding and physical product applications.</p>
+</div>
+<div class="showcase-primary">
+<div class="art-card">
+<img src="images/Medusa.png" alt="Medusa primary logo mark — full identity design">
+<div class="cap">Medusa — Primary Logo Mark</div>
+</div>
+</div>
+<div class="showcase-apps">
+<div class="art-card">
+<img src="images/MedusaPrime.png" alt="MedusaPrime — tech branding application of the Medusa logo">
+<div class="cap">MedusaPrime — Tech Branding</div>
+</div>
+<div class="art-card">
+<img src="images/SaggezziaBlack.png" alt="Saggezia Canvas Tote — product branding application of the Medusa logo">
+<div class="cap">Saggezia Canvas Tote — Product Application</div>
+</div>
 </div>
 </section>
 
